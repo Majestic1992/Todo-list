@@ -1,8 +1,8 @@
-import React, { useRef, useState } from "react";
+import React, { useRef } from "react";
 import "./Todo.scss";
 import { IoTrashSharp, IoCheckmarkDoneSharp } from "react-icons/io5";
 
-function Todo({ todo, text, completeHandler, deleteHandler, updateTodo }) {
+function Todo({ todo, text, completeHandler, deleteHandler }) {
   const todoRef = useRef(null);
 
   // Animates removal of todo

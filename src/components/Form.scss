@@ -56,10 +56,19 @@
     outline: none;
     transition: all 0.2s;
 
-    &:hover {
+    &:active {
       transform: scale(1.05);
       background-color: rgb(0, 250, 103);
       box-shadow: 0 0 0.8rem 1px rgb(0, 250, 103);
+    }
+
+    @media (min-width: 800px) {
+      &:hover,
+      &:active {
+        transform: scale(1.05);
+        background-color: rgb(0, 250, 103);
+        box-shadow: 0 0 0.8rem 1px rgb(0, 250, 103);
+      }
     }
   }
 }
